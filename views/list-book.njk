@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>List Book</title>
+</head>
+<body>
+    <ul>
+        {%for item in items %}
+        <li>
+            <a href="/book/{{book.getId}}">
+                {{book.getTitle()}}-{{book.getPublisher().getName()}}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
